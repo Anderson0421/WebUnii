@@ -1090,6 +1090,11 @@
     #sectionPago{
         text-align: center;
     }
+    #sectionPago img{
+        width: 350px;
+        height: 250px;
+        object-fit: cover !important;
+    }
 
     
         
@@ -1292,6 +1297,12 @@
           font-size: 14px;
           
         }
+        #sectionPago img{
+            width: 330px;
+            height: 220px;
+            object-fit: cover !important;
+        }
+    
         .filter-button {
             flex-basis: 60%; /* Hace que los botones ocupen el ancho completo en dispositivos pequeños */
             margin-right: 0;
