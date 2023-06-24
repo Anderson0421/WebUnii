@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Uni</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="bd36d03901">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+
+    <div class="wrapper" id="navbar">
+        <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+        <div class="logo"><a href="#">Uni</a></div>
+            <ul class="links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Horarios</a></li>
+            <li>
+                <a href="#" class="desktop-link">Cursos<i class='bx bx-chevron-down flechadown' ></i></a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">Cursos</label>
+                <ul class="cursos">
+                <li><a  href="#">Cursos libres<i class='bx bx-chevron-right flecharight'></i></a></li>
+                <li><a  href="#">Modulos<i class='bx bx-chevron-right flecharight' ></i></a></li>
+                <li><a  href="#">Capacitacion a empresas<i class='bx bx-chevron-right flecharight' ></i></a></li>
+                <li><a  href="#">Servicio de informativa educativa<i class='bx bx-chevron-right flecharight' ></i></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Certificaciones</a></li>
+            <li><a href="#">Pearson Vue</a></li>
+
+            <li class="Itranet">
+                <a href="#" class="desktop-link">INTRANET</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">Intranet</label>
+                <ul>
+                <li><a href="#"><i class="fa-solid fa-user-graduate"></i>Alumno</a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-user-tie"></i>Docente</a></li>
+                </ul>
+            </li>
+            </ul>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon' style="font-size: 18px;"></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+        </div>
+        
+        </nav>
+    </div>
+    <section class="hero text-center"  id="section1">
+
+            <ul class="hero-slider" data-hero-slider>
+
+            <li class="slider-item active" data-hero-slider-item>
+
+                <div class="slider-bg">
+                <img src="images/back.webp" width="1880" height="950" alt="" class="img-cover">
+                </div>
+
+                <p class="label-2 section-subtitle slider-reveal">Aprende</p>
+
+                <h1 class="display-1 hero-title slider-reveal">
+                Desarrollador <br>
+                Backend
+                </h1>
+
+                <p class="body-2 hero-text slider-reveal">
+                    <i class='bx bxl-python'></i><i class='bx bxl-postgresql' ></i><i class='bx bxl-java' ></i><i class='bx bxl-nodejs' ></i><i class='bx bxl-php' ></i><i class='bx bx-data' ></i>
+                </p>
+
+                <a href="#menutext" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Aprende
+                </span>
+
+                <span class="text text-2" aria-hidden="true">Mas informacion</span>
+                </a>
+
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+
+                <div class="slider-bg">
+                <img src="images/R.jfif" width="1880" height="950" alt="" class="img-cover">
+                </div>
+
+                <p class="label-2 section-subtitle slider-reveal">Aprende</p>
+
+                <h1 class="display-1 hero-title slider-reveal">
+                    Desarrollador <br>
+                    FrontEnd
+                </h1>
+
+                <p class="body-2 hero-text slider-reveal">
+                    <i class='bx bxl-html5' ></i><i class='bx bxl-css3' ></i><i class='bx bxl-tailwind-css' ></i><i class='bx bxl-react' ></i><i class='bx bxl-typescript' ></i>
+                </p>
+
+                <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Aprende</span>
+
+                <span class="text text-2" aria-hidden="true">Mas informacion</span>
+                </a>
+
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+
+                <div class="slider-bg">
+                <img src="images/droid.jpg" width="1880" height="950" alt="" class="img-cover">
+                </div>
+
+                <p class="label-2 section-subtitle slider-reveal">Aprende</p>
+
+                <h1 class="display-1 hero-title slider-reveal" id="movil">
+                    Diseño<br>
+                    Mobile
+                </h1>
+
+                <p class="body-2 hero-text slider-reveal">
+                Kotlin - Dart - Flutter
+                </p>
+
+                <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Aprende</span>
+
+                <span class="text text-2" aria-hidden="true">Mas informacion</span>
+                </a>
+
+            </li>
+
+            </ul>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+            <ion-icon name="chevron-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+            <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+
+
+    </section>
+
+    <section class="about section section2 headline" id="about">
+        <div class="about__container container grid">
+            <img src="images/uni.jpg" alt="" class="about__img">
+            <div class="about__data">
+                <h1 class="about__heading">¿Quienes Somos?</h1>
+                <p class="about__description">Somos una empresa líder en el campo de la educación en línea para programación. Con una sólida reputación y reconocimiento en la industria, nos enorgullece ofrecer una plataforma de aprendizaje de alta calidad para aquellos que desean adquirir habilidades en programación y destacar en el mundo digital.
+                    Nuestro enfoque se centra en brindar cursos de programación innovadores y actualizados, diseñados para satisfacer las necesidades y demandas cambiantes del mercado. Contamos con un equipo de expertos en programación y educación, quienes han desarrollado cuidadosamente nuestros programas de estudio para asegurarnos de que adquieras los conocimientos y las habilidades relevantes para tener éxito en tu carrera.
+                    </p>
+            </div>
+
+    </section>
+    <section class="section Pago" id="sectionPago">
+        
+        <h1 class="Title">ACCEDE DE MANERA FACIL<span class="Info"><a href="#">Mas informacion</a></span></h1>
+        <div class="container demo-2">
+			<ul class="grid2 cs-style-4">
+				<li>
+					<figure>
+						<div><img src="images/backend web development.jpg" alt="img05"></div>
+						<figcaption>
+							<h3>BCP</h3>
+							<span>Formas de Pago</span>
+							<a href="#">Hecha un vistazo</a>
+						</figcaption>
+					</figure>
+				</li>
+                <li>
+					<figure>
+						<div><img src="images/backend web development.jpg" alt="img05"></div>
+						<figcaption>
+							<h3>Certificados</h3>
+							<span>Tramites de Certificado</span>
+							<a href="#">Hecha un vistazo</a>
+						</figcaption>
+					</figure>
+				</li>
+                <li>
+					<figure>
+						<div><img src="images/backend web development.jpg" alt="img05"></div>
+						<figcaption>
+							<h3>Ventajas</h3>
+							<span>Oportunidad Laboral</span>
+							<a href="http://dribbble.com/shots/1116775-Safari">Hecha un vistazo</a>
+						</figcaption>
+					</figure>
+				</li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="swiper-section">
+        <div class="filter">
+          <button class="filter-button active" data-filter="all">Todo</button>
+          <button class="filter-button" data-filter="cat1">Backend</button>
+          <button class="filter-button" data-filter="cat2">Frontend</button>
+          <button class="filter-button" data-filter="cat3">Movil</button>
+        </div>
+        <center><div class="swiper-container">    
+          <div class="swiper-wrapper">
+            <div class="swiper-slide filter cat1">
+                <div class="image-container">
+                    <img src="courses/c.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">C# DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a  class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat3">
+                <div class="image-container">
+                    <img src="courses/flutter.png" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">FLUTTER DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat1">
+                <div class="image-container">
+                    <img src="courses/py.jfif" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">PYTHON DE 0 A EXPERTO </h1>
+                        <p>Learn Python Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat2">
+                <div class="image-container">
+                    <img src="courses/react.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">REACT DE 0 A EXPERTO </h1>
+                        <p>Learn REACT Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat1">
+                <div class="image-container">
+                    <img src="courses/sql.jfif" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">SQL DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat1">
+                <div class="image-container">
+                    <img src="courses/php.png" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">PHP DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat3">
+                <div class="image-container">
+                    <img src="courses/dart.png" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">DART DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat1">
+                <div class="image-container">
+                    <img src="courses/java.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">JAVA DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat2">
+                <div class="image-container">
+                    <img src="courses/html.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">HTML DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a class="Btnpri" href="#">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat2">
+                <div class="image-container">
+                    <img src="courses/css.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">CSS DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a href="#" class="Btnpri">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat2">
+                <div class="image-container">
+                    <img src="courses/js.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">JAVASCRIPT DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a href="#" class="Btnpri">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat2">
+                <div class="image-container">
+                    <img src="courses/tai.png" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">TAILWIN DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a href="#" class="Btnpri">Acceder</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide filter cat3">
+                <div class="image-container">
+                    <img src="courses/kotlin.jpg" alt="">
+                    <div class="image-overlay">
+                        <h1 class="image-text">KOTLIN DE 0 A EXPERTO </h1>
+                        <p>Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics! <br> <br> <span>Precio : S/ 400 </span></p>
+                        <div><a href="#" class="Btnpri">Acceder</a></div>
+                    </div>
+                </div>
+          </div>
+
+        </div></center>
+        
+      </section>
+<div id="espacio" style="height: 200px ; width: 200px;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="ScriptC.js"></script>
+    <script src="script.js"></script>
+    <script src="js/toucheffects.js"></script>
+    
+
+    <script src="https://kit.fontawesome.com/bd36d03901.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Versiones :
+Version 1.0 (20 DE JUNIO)
+	a. Diseño y modelado del html y css (Navbar Full responsive)
+	b. Implementacion de script para modo noche y dia
+	c. Implementacion de icons
