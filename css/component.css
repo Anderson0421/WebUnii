@@ -24,7 +24,7 @@ body.dark{
     justify-content: center;
 }
 
-.grid2 {
+.grid {
 	padding: 20px 20px 100px 20px;
 	max-width: 2000px;
 	margin: 0 auto;
@@ -36,7 +36,7 @@ body.dark{
 
 }
 
-.grid2 li {
+.grid li {
 	display: inline-block;
 	width: 360px;
 	flex: 0 0 auto;
@@ -47,19 +47,19 @@ body.dark{
 	position: relative;
 }
 
-.grid2 figure {
+.grid figure {
 	margin: 0;
 	position: relative;
 	
 }
 
-.grid2 figure img {
+.grid figure img {
 	max-width: 100%;
 	display: block;
 	position: relative;
 }
 
-.grid2 figcaption {
+.grid figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -68,14 +68,14 @@ body.dark{
 	color:var(--white-color) ;
 }
 
-.grid2 figcaption h3 {
+.grid figcaption h3 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
 }
 
 
-.grid2 figcaption a {
+.grid figcaption a {
 	text-align: center;
 	padding: 5px 10px;
 	margin-left: 10px;
@@ -414,10 +414,10 @@ body.dark{
 }
 
 @media screen and (max-width: 31.5em) {
-	.grid2 {
+	.grid {
 		padding: 10px 10px 100px 10px;
 	}
-	.grid2 li {
+	.grid li {
 		width: 100%;
 		min-width: 300px;
 	}

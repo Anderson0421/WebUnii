@@ -219,3 +219,17 @@ filterButtons.forEach(button => {
     button.classList.add('active');
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  var figures = document.querySelectorAll(".cs-style-4 figure");
+
+  figures.forEach(function(figure) {
+      figure.addEventListener("mouseenter", function() {
+          this.classList.add("hovered");
+      });
+    
+      figure.addEventListener("mouseleave", function() {
+          this.classList.remove("hovered");
+      });
+  });
+});
+
