@@ -5,6 +5,6 @@ ScrollReveal().reveal('.about__heading', { delay: 120,duration:2000, origin:'bot
 ScrollReveal().reveal('.about__description', { delay: 150,duration:2500, origin:'bottom',distance:'-250px' });
 
 ScrollReveal().reveal('.Title', { delay: 90,duration:2000, origin:'top',distance:'-150px' });
-ScrollReveal().reveal('.grid2', { delay: 150,duration:2500, origin:'bottom',distance:'-250px' });
+ScrollReveal().reveal('.grid', { delay: 150,duration:2500, origin:'bottom',distance:'-250px' });
 
 

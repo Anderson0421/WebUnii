@@ -3,6 +3,7 @@
     :root{
         --body-color: #E4E9F7;
         --nav-color: #4070F4;
+        --nav2-color: #9125e5;
         --side-nav: #010718;
         --text-color: #FFF;
         --hover-color:#20377e;
@@ -20,6 +21,8 @@
         --side-nav: #242526;
         --hover-color:#2e48df;
         --white-color:#fdfbfb;
+        --nav2-color: #a640f4;
+
 
 
         
@@ -1112,6 +1115,7 @@
         max-width: 1000px;
         overflow: hidden;
         animation: neon-glow 1s infinite alternate;
+        margin-top: 50px;
         
       }
       
@@ -1132,6 +1136,11 @@
         object-fit: cover;
         
       }
+      .crs{
+        color: var(--white-color);
+        font-size: 30px !important;
+        font-family: 'Fira Code', monospace;
+      }
       
       .swiper-slide .caption {
         position: absolute;
@@ -1142,36 +1151,6 @@
         background-color: rgba(0, 0, 0, 0.7); /* Ajusta el color de fondo según tus preferencias */
         color: white; /* Ajusta el color del texto según tus preferencias */
         font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
-      }
-      
-      .filter {
-        margin-bottom: 10px;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-      }
-      .filter button{
-        color: white;
-      }
-      .filter-button {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        padding: 20px 30px;
-        background-color: #313131;
-        border: none;
-        align-items: center;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 15px;
-      }
-      .filter-button:hover{
-        transition: all .5s ;
-        transform: scale(1.05);
-        background-color: grey;
       }
       .swiper-pagination {
         position: relative !important;
@@ -1262,15 +1241,68 @@
       
       .image-overlay p {
         color: white;
-
         font-size: 16px;
-        margin-bottom: 8px;
       }
       
       .swiper-slide .image-container:hover .image-overlay {
         opacity: 1;
         
       }
+      .titulo{
+        margin-top:15px ;
+      }
+      .swiper-container h1 {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: var(--white-color);
+        position: relative; /* Agregamos una posición relativa para el seudoelemento */
+
+      }
+      #home__subtitle{
+        color: var(--nav2-color);
+      }
+      .swiper-container .Prnst {
+        position: relative;
+        text-align: start !important;
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: var(--white-color);
+        position: relative; /* Agregamos una posición relativa para el seudoelemento */
+      }
+      .swiper-container .lngs{
+        color: var(--nav2-color);
+      }
+      .swiper-container .image-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Ajusta la posición vertical del subrayado */
+        width: 100%;
+        height: 2px;
+        background-color: var(--white-color); /* Color del subrayado */
+        transform-origin: left;
+        transform: scaleX(0); /* Inicialmente ocultamos el subrayado */
+        transition: transform 0.3s ease-in-out; /* Agregamos una transición para el efecto animado */
+      }
+      
+      .swiper-container h1:hover::after {
+        transform: scaleX(1); /* Mostramos el subrayado al pasar el cursor por encima */
+      }
+      
+      /* Agregamos una animación keyframes opcional para el subrayado */
+      @keyframes underline {
+        0% {
+          transform: scaleX(0);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      }
+      
+      
+      
       
       .swiper-slide .image-container:hover img {
         filter: blur(3px); /* Ajusta el nivel de desenfoque según tus preferencias */
@@ -1288,7 +1320,9 @@
         text-align: center;
         width: fit-content;
       }
-      
+      @media screen and (max-width: 1087px) {
+
+      }
       
       @media screen and (max-width: 767px) {
         .swiper-slide {
@@ -1345,7 +1379,7 @@
             font-size: 10px;
             margin: 0;
             padding: 0;
-            top: -20px !important;
+            top: -5px !important;
           }
       }
       @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1380,7 +1414,7 @@
             }
             .image-text {
               color: white;
-              font-size: 15px;
+              font-size: 19px !important;
               font-weight: bold;
               margin-bottom: 10px;
               letter-spacing: 4px;
@@ -1398,10 +1432,10 @@
             .Btnpri {
               position: relative;
               display: flex;
-              font-size: 20px;
+              font-size: 10px;
               margin: 0;
               padding: 0;
-              top: -20px !important;
+              top: -10px !important;
             }
       }
       
