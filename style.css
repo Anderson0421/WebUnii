@@ -589,30 +589,6 @@
         max-width: max-content;
         margin-inline: auto;
     }
-    
-    .hover-underline {
-        position: relative;
-        max-width: max-content;
-    }
-    
-    .hover-underline::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 5px;
-        border-block: 1px solid var(--gold-crayola);
-        transform: scaleX(0.2);
-        opacity: 0;
-        transition: var(--transition-2);
-    }
-    
-    .hover-underline:is(:hover, :focus-visible)::after {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    
     .contact-number::after { bottom: -5px; }
     
     .text-center { text-align: center; }
@@ -1231,7 +1207,7 @@
       }
       
       .image-text {
-        color: white;
+        color: white !important;
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -1274,6 +1250,9 @@
       .swiper-container .lngs{
         color: var(--nav2-color);
       }
+      .text.text-1{
+        font-size: 25px !important;
+      }
       .swiper-container .image-text::after {
         content: "";
         position: absolute;
@@ -1281,7 +1260,7 @@
         bottom: -5px; /* Ajusta la posición vertical del subrayado */
         width: 100%;
         height: 2px;
-        background-color: var(--white-color); /* Color del subrayado */
+        background-color: white; /* Color del subrayado */
         transform-origin: left;
         transform: scaleX(0); /* Inicialmente ocultamos el subrayado */
         transition: transform 0.3s ease-in-out; /* Agregamos una transición para el efecto animado */
@@ -1331,6 +1310,9 @@
           font-size: 14px;
           
         }
+        .text.text-1{
+            font-size: 10px !important;
+          }
         #sectionPago img{
             width: 330px;
             height: 220px;
@@ -1357,7 +1339,6 @@
             
           }
           .image-text {
-            color: white;
             font-size: 13px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -1382,6 +1363,25 @@
             top: -5px !important;
           }
       }
+      @media screen and (min-width: 1200px) {
+          .image-text {
+            font-size: 13px;
+
+          }
+          .about__description{
+            font-size: 16px;
+        }
+        .about__img{
+            width: 500px;
+            height: 250px;
+        }
+        .Prnst{
+            font-size: 18px !important;
+        }
+      }
+
+
+      
       @media screen and (min-width: 768px) and (max-width: 1023px) {
         .swiper-slide {
           width: 300px !important;
