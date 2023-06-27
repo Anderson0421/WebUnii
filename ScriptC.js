@@ -7,4 +7,12 @@ ScrollReveal().reveal('.about__description', { delay: 150,duration:2500, origin:
 ScrollReveal().reveal('.Title', { delay: 90,duration:2000, origin:'top',distance:'-150px' });
 ScrollReveal().reveal('.grid', { delay: 150,duration:2500, origin:'bottom',distance:'-250px' });
 
-
+function toggleDiv() {
+    var div = document.getElementById("miDiv");
+    if (div.style.display === "none") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
+  
